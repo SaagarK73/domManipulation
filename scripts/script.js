@@ -31,3 +31,20 @@ const h1Content = document.createElement('h1');
 h1Content.classList.add('h1Content');
 h1Content.textContent = 'I am a div';
 container2.appendChild(h1Content);
+
+const pMeToo = document.createElement('p');
+pMeToo.classList.add('pMeToo');
+pMeToo.textContent = 'ME TOO';
+container2.appendChild(pMeToo);
+
+const button = document.querySelector('#btn');
+// button.onclick = () => alert('Hello');
+
+btn.addEventListener('click', function (e) {
+    e.target.style.background = 'blue';
+  });
+
+const button2 = document.querySelector('#btn2');
+button2.addEventListener('click', () => {
+    alert('Clicked button 2');
+});
